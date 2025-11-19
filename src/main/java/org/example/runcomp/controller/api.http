@@ -1,0 +1,9 @@
+### Create Multiple Users (Batch)
+POST http://localhost:8080/api/users/batch
+Content-Type: application/json
+
+[
+  { "name": "John Runner" },
+  { "name": "Sarah Swift" },
+  { "name": "Mike Speed" }
+]

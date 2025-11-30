@@ -18,13 +18,12 @@ I built this to combine my passion for running with backend development.
 - JNI (Java <-> C++ Integration)  
 - Maven  
 
----
-
-## 🚀 Running the Project  
+## 🚀 Running the Project
 To start the API locally:
 
 ```bash
 mvn spring-boot:run
+```
 
 ## 📸 Screenshots
 
@@ -33,3 +32,4 @@ mvn spring-boot:run
 
 ### 📋 Runs and API Activity
 ![Runs Screenshot](https://raw.githubusercontent.com/Peter-c-dev/running-competition-api/f1b0bf6c61e98c77a196b3b0ebdea0edb1cee81d/Running%20program%20Screenshot%202.png)
+

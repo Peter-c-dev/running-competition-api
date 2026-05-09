@@ -1,29 +1,39 @@
-🏃 Running Competition API  
-A Spring Boot application designed to manage running competitions, with optional C++ integration via JNI for performance-intensive operations.  
-I built this to combine my passion for running with backend development.
+# 🏃 Running Competition API
 
-📌 Features  
+A Spring Boot REST API for managing running competitions, runners, and performance tracking.
+
+This project was built to combine my interest in running with backend development, focusing on RESTful API design, database interaction, and clean architecture.
+
+---
+
+## 🚀 Features
+
 - Register runners  
 - Create and manage competitions  
-- Track rankings and performance stats  
+- Track rankings and performance statistics  
 - RESTful API architecture  
 - Spring Data JPA persistence  
-- (Optional) JNI integration with C++ for native performance  
+- Optional JNI integration with C++ for performance  
 
-🛠️ Tech Stack  
+---
+
+## 🛠️ Tech Stack
+
 - Java 17  
 - Spring Boot  
 - Spring Data JPA  
 - H2 / MySQL (configurable)  
-- JNI (Java <-> C++ Integration)  
 - Maven  
+- JNI (Java ↔ C++)  
 
-## 🚀 Running the Project
+---
+
+## ▶️ Running the Project
+
 To start the API locally:
 
 ```bash
 mvn spring-boot:run
-```
 
 ## 📸 Screenshots
 

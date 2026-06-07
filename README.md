@@ -23,6 +23,28 @@ This project was built to combine my interest in running with backend developmen
 - Maven
 - Swagger / OpenAPI
 
+  ## 📸 Screenshots
+
+### Swagger API Documentation
+
+![Swagger UI](screenshots/swagger-running-homepage.png)
+
+### Create Run Endpoint
+
+![Create Run](screenshots/create-run-api.png)
+
+### Get Runs Endpoint
+
+![Get Runs](screenshots/get-runs-api.png)
+
+### Pace Calculator Endpoint
+
+![Pace Calculator](screenshots/pace-calculator-api.png)
+
+### Project Structure
+
+![Project Structure](screenshots/running-project-structure.png)
+
 ## ▶️ Running the Project
 
 To start the API locally:

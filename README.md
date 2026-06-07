@@ -23,27 +23,27 @@ This project was built to combine my interest in running with backend developmen
 - Maven
 - Swagger / OpenAPI
 
-  ## 📸 Screenshots
+## 📸 Screenshots
 
 ### Swagger API Documentation
 
-![Swagger UI](screenshots/swagger-running-homepage.png)
+Swagger UI
 
 ### Create Run Endpoint
 
-![Create Run](screenshots/create-run-api.png)
+Create Run
 
 ### Get Runs Endpoint
 
-![Get Runs](screenshots/get-runs-api.png)
+Get Runs
 
 ### Pace Calculator Endpoint
 
-![Pace Calculator](screenshots/pace-calculator-api.png)
+Pace Calculator
 
 ### Project Structure
 
-![Project Structure](screenshots/running-project-structure.png)
+Project Structure
 
 ## ▶️ Running the Project
 
@@ -51,3 +51,33 @@ To start the API locally:
 
 ```bash
 mvn spring-boot:run
+```
+
+The application will start on:
+
+```text
+http://localhost:8080
+```
+
+Swagger UI:
+
+```text
+http://localhost:8080/swagger-ui.html
+```
+
+## 📚 What I Learned
+
+- Spring Boot REST APIs
+- Controller, Service and Repository architecture
+- DTO design
+- Spring Data JPA
+- H2 database integration
+- Swagger/OpenAPI documentation
+- API testing
+- Maven project management
+
+## 👨‍💻 Author
+
+Peter Cross
+
+GitHub: https://github.com/Arargox

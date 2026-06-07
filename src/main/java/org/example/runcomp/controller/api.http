@@ -1,9 +1,65 @@
-### Create Multiple Users (Batch)
+### ---------------------------------------------------------
+###  CREATE MULTIPLE USERS (Batch)
+### ---------------------------------------------------------
 POST http://localhost:8080/api/users/batch
 Content-Type: application/json
 
 [
   { "name": "John Runner" },
   { "name": "Sarah Swift" },
-  { "name": "Mike Speed" }
+  { "name": "Mike Speed" },
+  { "name": "New Runner" }
 ]
+
+### ---------------------------------------------------------
+###  CREATE RUNS FOR USERS
+### ---------------------------------------------------------
+
+### Create a Run for User 1 (John Runner)
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "distance": 5.2,
+  "duration": "00:28:14",
+  "location": "Forest Trail"
+}
+
+### Second Run for User 1
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "distance": 10.0,
+  "duration": "01:01:30",
+  "location": "City Loop"
+}
+
+### Create a Run for User 2 (Sarah Swift)
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "distance": 3.6,
+  "duration": "00:18:07",
+  "location": "Green Trail"
+}
+
+
+### Get All Users
+GET http://localhost:8080/api/users
+
+### Get All Runs
+GET http://localhost:8080/api/runs
+
+### Get Runs for User 1 (John Runner)
+GET http://localhost:8080/api/runs/user/1
+
+### Get Runs for User 2 (Sarah Swift)
+GET http://localhost:8080/api/runs/user/2
+
+
+DELETE http://localhost:8080/api/runs/1

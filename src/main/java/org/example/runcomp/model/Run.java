@@ -3,21 +3,18 @@ package org.example.runcomp.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "runs")
 public class Run {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private double distance; // stored in KM
+    private double distance;
     private double time;
+    private String location;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")   // this creates a user_id column in the runs table
     private User user;
-
-    public Run() {}
 
     public Long getId() {
         return id;
@@ -39,6 +36,14 @@ public class Run {
         this.time = time;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public User getUser() {
         return user;
     }
@@ -46,10 +51,6 @@ public class Run {
     public void setUser(User user) {
         this.user = user;
     }
-
-    // KM → Miles converter
-    @Transient
-    public double getMiles() {
-        return distance * 0.621371;
-    }
 }
+
+// ------------------------------------------

@@ -1,3 +1,8 @@
 package org.example.runcomp.dto;
 
-public record CreateRunRequest(double distance, double time, Long userId) {}
+public record CreateRunRequest(
+        Long userId,
+        double distance,
+        double time,
+        String location
+) {}

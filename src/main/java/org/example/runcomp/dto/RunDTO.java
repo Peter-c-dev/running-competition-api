@@ -4,6 +4,9 @@ public record RunDTO(
         Long id,
         double distance,
         double time,
-        double pace,
-        Long userId
+        Double pace,
+        Long userId,
+        String userName,
+        String location
 ) {}
+

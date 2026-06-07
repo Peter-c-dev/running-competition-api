@@ -27,23 +27,23 @@ This project was built to combine my interest in running with backend developmen
 
 ### Swagger API Documentation
 
-Swagger UI
+![Swagger UI](screenshots/swagger-running-homepage.png)
 
 ### Create Run Endpoint
 
-Create Run
+![Create Run](screenshots/create-run-api.png)
 
 ### Get Runs Endpoint
 
-Get Runs
+![Get Runs](screenshots/get-runs-api.png)
 
 ### Pace Calculator Endpoint
 
-Pace Calculator
+![Pace Calculator](screenshots/pace-calculator-api.png)
 
 ### Project Structure
 
-Project Structure
+![Project Structure](screenshots/running-project-structure.png)
 
 ## ▶️ Running the Project
 

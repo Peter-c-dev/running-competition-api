@@ -80,4 +80,3 @@ http://localhost:8080/swagger-ui.html
 
 Peter Cross
 
-GitHub: https://github.com/Arargox

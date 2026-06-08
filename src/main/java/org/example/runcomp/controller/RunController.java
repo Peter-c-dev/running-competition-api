@@ -27,7 +27,35 @@ public class RunController {
     public List<Run> getAllRuns() {
         return runRepository.findAll();
     }
-
+    @GetMapping("/{id}")
+    public ResponseEntity<Run> getRunById(@PathVariable Long id) {
+        return runRepository.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Run> updateRun
+            (@PathVariable Long id,
+             @RequestBody Run updatedRun) {
+        return runRepository.findById(id)
+                .map(run -> {
+                    run.setDistance(updatedRun.getDistance());
+                    run.setTime(updatedRun.getTime());
+                    run.setLocation(updatedRun.getLocation());
+                    return ResponseEntity.ok(
+                            runRepository.save(run)
+                    );
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteRun(@PathVariable Long id) {
+        if(!runRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        runRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
     // Calculate pace
     @GetMapping("/pace")
     public double calculatePace(

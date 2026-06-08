@@ -1,32 +1,49 @@
 # 🏃 Running Competition API
 
-A Spring Boot REST API for managing running competitions, runners, and performance tracking.
+A Spring Boot REST API for managing running data and calculating running pace.
 
-This project was built to combine my interest in running with backend development, focusing on RESTful API design, database interaction, and clean architecture.
-
----
+This project was built to combine my interest in running with backend development, focusing on RESTful API design, database interaction, Swagger documentation, and clean architecture.
 
 ## 🚀 Features
 
-- Register runners
-- Create and manage competitions
-- Track rankings and performance statistics
+- Create running records
+- View all running records
+- Calculate running pace
 - RESTful API architecture
 - Spring Data JPA persistence
-- Optional JNI integration with C++ for performance
-
----
+- Swagger / OpenAPI documentation
+- H2 in-memory database
 
 ## 🛠️ Tech Stack
 
 - Java 17
 - Spring Boot
 - Spring Data JPA
-- H2 / MySQL (configurable)
+- H2 Database
 - Maven
-- JNI (Java ↔ C++)
+- Swagger / OpenAPI
 
----
+## 📸 Screenshots
+
+### Swagger API Documentation
+
+![Swagger UI](screenshots/swagger-running-homepage.png)
+
+### Create Run Endpoint
+
+![Create Run](screenshots/create-run-api.png)
+
+### Get Runs Endpoint
+
+![Get Runs](screenshots/get-runs-api.png)
+
+### Pace Calculator Endpoint
+
+![Pace Calculator](screenshots/pace-calculator-api.png)
+
+### Project Structure
+
+![Project Structure](screenshots/running-project-structure.png)
 
 ## ▶️ Running the Project
 
@@ -36,34 +53,30 @@ To start the API locally:
 mvn spring-boot:run
 ```
 
----
+The application will start on:
 
-## 📸 Screenshots
+```text
+http://localhost:8080
+```
 
-### 🏃 Users Endpoint
-![Users Endpoint](running-users-endpoint.png)
+Swagger UI:
 
-### 📋 Full API Demo
-![API Demo](running-full-api-demo.png)
-
-### 🗂️ Project Structure
-![Project Structure](running-project-structure.png)
-
----
+```text
+http://localhost:8080/swagger-ui.html
+```
 
 ## 📚 What I Learned
 
-Through this project I improved my understanding of:
-
-- REST API development
-- Spring Boot architecture
-- Database persistence with JPA
-- API testing with Postman
-- Backend project structure
-- Java and C++ interoperability using JNI
-
----
+- Spring Boot REST APIs
+- Controller, Service and Repository architecture
+- DTO design
+- Spring Data JPA
+- H2 database integration
+- Swagger/OpenAPI documentation
+- API testing
+- Maven project management
 
 ## 👨‍💻 Author
 
-Peter-c-dev
+Peter Cross
+
